@@ -3,6 +3,8 @@ DevByteRepository - Solution Code
 
 Solution code for the Repository codelab.
 
+https://developer.android.com/courses/pathways/android-basics-kotlin-unit-5-pathway-2
+
 Introduction
 ------------
 
@@ -27,28 +29,11 @@ You need to know:
 - Using the Retrofit networking library.
 
 
-Getting Started
+Summary
 ---------------
 
-1. Download and run the app.
-2. You need Android Studio 3.4 or higher to build this project.
-
-License
--------
-
-Copyright 2019 Google, Inc.
-
-Licensed to the Apache Software Foundation (ASF) under one or more contributor
-license agreements.  See the NOTICE file distributed with this work for
-additional information regarding copyright ownership.  The ASF licenses this
-file to you under the Apache License, Version 2.0 (the "License"); you may not
-use this file except in compliance with the License.  You may obtain a copy of
-the License at
-
-  http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
-License for the specific language governing permissions and limitations under
-the License.
+- Caching is a process of storing data fetched from a network on a device's storage. Caching lets your app access data when the device is offline, or if your app needs to access the same data again.
+- The best way for your app to store structured data on a device's file system is to use a local SQLite database. Room is an SQLite object-mapping library, meaning that it provides an abstraction layer over SQLite. Using Room is the recommended best practice for implementing offline caching.
+- A repository class isolates data sources, such as a Room database and web services, from the rest of the app. The repository class provides a clean API for data access to the rest of the app.
+- Using repositories is a recommended best practice for code separation and architecture.
+- When you design an offline cache, it's a best practice to separate the app's network, domain, and database objects. This strategy is an example of separation of concerns.
